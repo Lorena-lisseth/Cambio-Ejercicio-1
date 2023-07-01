@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cambio.MainPage">
+
+    <ScrollView BackgroundColor="Linen">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="vuel.png" 
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <Label Text="Ejercicio 1" TextColor="Green" FontAttributes="Italic" FontSize="Subtitle" HorizontalOptions="Center"/>
+            <Entry x:Name="Cost" Placeholder="Ingrese el costo del articulo" TextColor="Black"/>
+            
+            <Entry x:Name="Cant" Placeholder="Ingrese la cantidad de dinero" TextColor="Black"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Ver resultado"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="LightGreen"
+                BorderWidth="2"
+                BorderColor="Green"
+                TextColor="Black"/>
+            
+            
+            <Entry x:Name="Vuelto" Placeholder="El cambio del cliente es" TextColor="Black" IsEnabled="False"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
